@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- BACKGROUND / SHAPES -->
+    <div class="background-elements" aria-hidden="true">
+        <div class="geom g1"></div>
+        <div class="geom g2"></div>
+        <div class="geom g3"></div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <img src="img/download (9).jpg" alt="Imagem do Artista" />
+            <h1>Portifólios.</h1>
+            <p>Registro das 14 redações realizadas ao longo de 100 dias de dedicação.
+Responsável pela elaboração das redações: <strong>Grabriella</strong>.</p>
+        </div>
+    </header>
+
+    <section class="skills" aria-labelledby="descricao-title">
+        <h2 id="descricao-title">Descrição</h2>
+        <ul>
+            <li>Redações</li>
+            <li>Imagens</li>
+            <li>Notas</li>
+        </ul>
+    </section>
+
+    <section class="projects" aria-labelledby="historico-title">
+        <h2 id="historico-title">Históricos de redação</h2>
+
+        <div class="projects-grid">
+            <div class="project-item" onclick="openModal('projeto1')" role="button" tabindex="0">
+                <img src="img/Beauty SALON.jpg" alt="foto de pessoa fazendo procedimentos estéticos." />
+                <h3>Redação 1.</h3>
+                <p>Por que os procedimentos estéticos estão aumentando entre os jovens?</p>
+            </div>
+
+            <div class="project-item" onclick="openModal('projeto2')" role="button" tabindex="0">
+                <img src="img/download (10).jpg" alt="pessoa de cadeira de rodas na frente de um onibus. " />
+                <h3>Redação 2.</h3>
+                <p>Acessibilidade e inclusão de pessoas com deficiência no Brasil.</p>
+            </div>
+
+            <div class="project-item" onclick="openModal('projeto3')" role="button" tabindex="0">
+                <img src="img/O que as pessoas do mundo todo fazem para ser mais saudáveis.jpg" alt="pessoa de cadeira de rodas na frente de um onibus. " />
+                <h3>Redação 3.</h3>
+                <p>Principais fatores que influenciam a qualidade de vida e o bem-estar da população.</p>
+            </div>
+
+            <div class="project-item" onclick="openModal('projeto4')" role="button" tabindex="0">
+                <img src="img/Mundo pode bater 1,5ºC em uma década.jpg" alt="Foto." />
+                <h3>Redação 4.</h3>
+                <p>As mudanças climáticas no Brasil e seus desafios.</p>
+            </div>
+
+            <div class="project-item" onclick="openModal('projeto5')" role="button" tabindex="0">
+                <img src="img/Lixo eletrônico representa ‘crescente risco’ ao meio ambiente e à saúde humana, diz relatório da ONU.jpg" alt="Lixo eletronico." />
+                <h3>Redação 5.</h3>
+                <p>As consequências do descarte de lixo eletrônico.</p>
+            </div>
+
+            <div class="project-item" onclick="openModal('projeto6')" role="button" tabindex="0">
+                <img src="img/Ultraprocessados representam a maior parte da alimentação dos brasileiros.jpg" alt="criança comprando ultraprocessados." />
+                <h3>Redação 6.</h3>
+                <p>O consumo de ultraprocessados e suas consequências à saúde.</p>
+            </div>
+
+            <div class="project-item" onclick="openModal('projeto7')" role="button" tabindex="0">
+                <img src="img/Uma crítica aos jogos de aposta.jpg" alt="Pessoa usando plataformas de apostas." />
+                <h3>Redação 7.</h3>
+                <p>Fatores e efeitos da dependência em jogos de apostas na web.</p>
+            </div>
+
+            <div class="project-item" onclick="openModal('projeto8')" role="button" tabindex="0">
+                <img src="img/Qual a diferença entre visto humanitário e refúgio - Nexo Jornal.jpg" alt="Pessoas." />
+                <h3>Redação 8.</h3>
+                <p>A importância do trabalho voluntário no combate às desigualdades sociais.</p>
+            </div>
+
+            <div class="project-item" onclick="openModal('projeto9')" role="button" tabindex="0">
+                <img src="img/Garoto triste de tiro completo no parque _ Foto Grátis.jpg" alt="Criança triste." />
+                <h3>Redação 9.</h3>
+                <p>Adultização infantil - consequências da perda irreparável da infância.</p>
+            </div>
+
+            <div class="project-item" onclick="openModal('projeto10')" role="button" tabindex="0">
+                <img src="img/download (11).jpg" alt="Imagem Redação 10" />
+                <h3>Redação 10.</h3>
+                <p>Caminhos para combater o etarismo nas relações sociais.</p>
+            </div>
+
+            <div class="project-item" onclick="openModal('projeto11')" role="button" tabindex="0">
+                <img src="img/Educação financeira no ensino médio_ Entenda a importância.jpg" alt="adolecentes estudando" />
+                <h3>Redação 11.</h3>
+                <p>A importância da educação financeira para os jovens.</p>
+            </div>
+
+            <div class="project-item" onclick="openModal('projeto12')" role="button" tabindex="0">
+                <img src="img/download (12).jpg" alt="Pessoas brasileiras" />
+                <h3>Redação 12.</h3>
+                <p>Desafios para a valorização da cultura popular brasileira.</p>
+            </div>
+
+            <div class="project-item" onclick="openModal('projeto13')" role="button" tabindex="0">
+                <img src="img/Favelas in Carapicuíba, Sao Paulo).jpg" alt="Victor e Carlos juntos fazendo um coração" />
+                <h3>Redação 13.</h3>
+                <p>Caminhos para a universalização do saneamento básico no Brasil.</p>
+            </div>
+
+            <div class="project-item" onclick="openModal('projeto14')" role="button" tabindex="0">
+                <img src="img/Os benefícios da Inclusão_ a diversidade na escola Check more at https___demonstre_com_beneficios-da-inclusao_.jpg" alt="Victor e Carlos juntos fazendo um coração" />
+                <h3>Redação 14.</h3>
+                <p>O papel do esporte como ferramenta de transformação social.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAIS (PROJETO 1..14) - conteúdo preservado -->
+    <div id="projeto1" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-projeto1">
+        <div class="modal-content">
+            <div class="flower-animation modal-flower" aria-hidden="true"></div>
+            <button class="close" aria-label="Fechar" onclick="closeModal('projeto1')">&times;</button>
+            <h2 id="titulo-projeto1">Nota: 480</h2>
+            <p>
+            A psicanalista Lacan, define a busca por aprovação como um desejo infinito, onde a validação externa nunca é completamente satisfatória, levando a um ciclo de busca incessante. Esta obra reflete diretamente no estigma, visto que a busca jovial por procedimentos estéticos crescem exponencialmente em nosso país, fato que se dá tanto pela perpetuação de estereótipos de gêneros, quanto pela falta de educação social sobre imagem corporal e autoestima.
+As redes sociais dispersam padrões estéticos entre os jovens. Na plataforma "Instagram" diversos influenciadores brasileiros mostram o pós operatório de suas cirurgias, como a jovem Liz Macedo que realizou uma rinoplastia com apenas 14 anos.
+Tal contexto contribui para a comparação estética dos jovens no Brasil, necessárias ações para reverter esse cenário.
+Sob segundo plano, a omissão de educação sobre a importância da autoestima também contribui para a resposta dos
+procedimentos estarem aumentando entre os jovens. Diariamente corpos padrões são retratados em propagandas, em desfiles ou em filmes, que retratam sempre a pessoa "perfeita" como protagonista. A obra cinematográfica "Patricinhas de Beverly Hills" é um exemplo disso, dado que a principal personagem exibe características físicas tidas como ideais estereotipados.
+Contudo, a mídia brasileira não se mostra atenta a divulgação de padrões estéticos exacerbados, deve-se ao Governo
+criar campanhas de conscientização com o intuito aplicar métodos de autoaceitação aos menores. Com isso teremos um país justo e desenvolvido.            
+            </p>
+            <p>data: 17/11/2025</p>
+        </div>
+    </div>
+
+    <div id="projeto2" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-projeto2">
+        <div class="modal-content">
+            <div class="flower-animation modal-flower" aria-hidden="true"></div>
+            <button class="close" aria-label="Fechar" onclick="closeModal('projeto2')">&times;</button>
+            <h2 id="titulo-projeto2">Nota: 480</h2>
+            <p>
+                A Constituição Federal de 1988 estabelece que todos os cidadãos são iguais perante a lei e possuem direito à dignidade
+humana. No entanto, no Brasil, a realidade das pessoas com deficiência mostra-se marcada por barreiras sociais e estruturais que dificultam sua plena inclusão, fato que se dá, principalmente pelo preconceito midiático.
+Em primeiro plano, é observado que a sociedade brasileira não se mostra atenta as formas de preconceito exibidas nas redes televisivas. Grande parte dos programas de televisão exibem em propagandas ou novelas, por exemplo, pessoas com o corpo em funcionamento "perfeito", onde os protagonistas raramente são pessoas com deficiências, sejam elas físicas ou mentais. Sendo necessárias ações para reverter esse cenário.
+Em conclusão, é obrigação do Governo Federal e do órgão que monitora as mídias brasileiras abranger mais protagonismo as pessoas com deficiência, conscientização realizada por meio de campanhas escolares, que ensinam desde cedo, p ser humano a respeitar as diferenças. Assim teremos um país justo e desenvolvido.
+            </p>
+            <p>data: 04/08/2025</p>
+        </div>
+    </div>
+
+    <div id="projeto3" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-projeto3">
+        <div class="modal-content">
+            <div class="flower-animation modal-flower" aria-hidden="true"></div>
+            <button class="close" aria-label="Fechar" onclick="closeModal('projeto3')">&times;</button>
+            <h2 id="titulo-projeto3">Nota: 800</h2>
+            <p>
+                No mundo contemporâneo, a busca pela qualidade de vida e pelo bem-estar coletivo tornou-se um dos maiores desafios
+sociais. Tais aspectos são diretamente influenciados por fatores como saúde, educação, economia e meio ambiente, que, quando negligenciados, comprometem o desenvolvimento humano e aumentam as desigualdades. Dessa forma, é fundamental compreender como esses elementos atuam no cotidiano da população.
+Em primeiro lugar, a saúde é um dos pilares essenciais para a qualidade de vida. O acesso a serviços médicos, vacinas e
+saneamento básico garante a prevenção de doenças e promove maior longevidade. Contudo, muitas regiões do Brasil ainda sofrem com a ausência desses recursos, o que acentua índices de mortalidade e reduz o bem-estar coletivo.
+Além disso, a educação e a economia possuem papel decisivo nesse contexto. A educação de qualidade amplia oportunidades no mercado de trabalho e proporciona autonomia, enquanto a estabilidade econômica garante acesso a moradia digna, segurança e lazer. Sem tais condições, a população enfrenta dificuldades para alcançar um padrão mínimo de dignidade, refletindo diretamente na insatisfação social.
+Portanto, é evidente que saúde, educação e economia são determinantes para a qualidade de vida e o bem-estar da
+população. Para solucionar essa questão, o governo federal, por meio do Ministério da Saúde, deve ampliar investimentos em saneamento e atendimento médico básico. Paralelamente, o Ministério da Educação precisa intensificar programas de inclusão escolar, assegurando igualdade de oportunidades. Ademais, as prefeituras podem promover políticas de urbanização sustentável, como a criação de áreas verdes e transporte público eficiente. Assim, será possível garantir melhores condições de vida à sociedade brasileira.
+            </p>
+            <p>data: 11/08/2025</p>
+        </div>
+    </div>
+
+    <div id="projeto4" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-projeto4">
+        <div class="modal-content">
+            <div class="flower-animation modal-flower" aria-hidden="true"></div>
+            <button class="close" aria-label="Fechar" onclick="closeModal('projeto4')">&times;</button>
+            <h2 id="titulo-projeto4">Nota: 505</h2>
+            <p>
+                O documentário "Uma verdade Inconveniente", de 2006, apresenta dados e fatos sobre o aquecimento global, mostrando
+as consequências da ação humana e a urgência de ações de combate. Apesar da data de publicação das evidências, elas se mostram severamente intensificadas no cenário brasileiro hodierno, desencadeando as emergências climáticas no Brasil, fato que se dá tanto pela falta de conscientização governamental, quanto pela exploração de recursos naturais pelas fábricas.
+Em primeiro plano, é válido destacar a omissão estatal como principal recurso desencadeador do estigma. Apesar do
+Governo através da Constituição Federal no artigo 255 determine que "todos têm direito ao meio ambiente ecologicamente equilibrado", na prática, o povo brasileiro vivência outra situação, uma vez que a falta de fiscalização dos crimes ambientais são realidade na nação verde amarela. Sendo necessárias ações para reverter esse cenário.
+Como conseguinte, é necessário citar o modo do sistema de trabalho capitalista no Brasil, fazendo com que empresas
+explorem recursos naturais de forma predatória em nome do crescimento econômico. Logo, agravam o desmatamento e promovem queimadas em nome do agronegócio, contribuindo assim, para as mudanças climáticas.
+Por fim, deve ao órgão responsável pela preservação ambiental, potencializar a fiscalização das leis que monitoram práticas que prejudicam a qualidade do ar, ademais, é necessário certa atenção ao modo de trabalho que estamos inseridos, onde é necessário realizar campanhas no meio educacional para conscientizar os jovens sobre a exploração da natureza realizada pelo sistema. Dessa forma, combateremos os fatos apresentados no documentário.
+            </p>
+            <p>data: 18/08/2025</p>
+        </div>
+    </div>
+
+    <div id="projeto5" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-projeto5">
+        <div class="modal-content">
+            <div class="flower-animation modal-flower" aria-hidden="true"></div>
+            <button class="close" aria-label="Fechar" onclick="closeModal('projeto5')">&times;</button>
+            <h2 id="titulo-projeto5">Nota: 840</h2>
+            <p>
+                Com o avanço acelerado da tecnologia, a substituição constante de aparelhos eletrônicos tornou-se um hábito comum na
+sociedade contemporânea. No entanto, o descarte inadequado desses equipamentos, conhecidos como lixo eletrônico, gera sérias consequências ambientais e sociais que ainda são pouco discutidas pela população e pelo poder público.
+Em primeiro lugar, o lixo eletrônico contém substâncias tóxicas, como chumbo, mercúrio e cádmio, que, ao serem descartados de forma inadequada, podem contaminar o solo os lençóis freáticos e o ar, afetando diretamente a saúde humana e a biodiversidade. Essa categoria de contaminação, muitas vezes invisível, pode causar doenças graves, especialmente em comunidades mais vulneráveis, onde o descarte irregular costuma ocorrer com maior frequência.
+Além disso, o acúmulo de lixo eletrônico contribui para o agravamento da crise ambiental, pois muitos desses materiais
+não são biodegradáveis e demoram séculos para se decompor. A ausência de políticas públicas eficazes e a falta de conscientização da população agravam esse cenário, dificultando a implementação de soluções sustentáveis.
+Diante disso, é fundamental que o poder público invista em campanhas de educação ambiental que informem sobre os
+riscos do descarte incorreto e estimulem o consumo consciente. Também se faz necessária a criação de pontos de coleta específicos para o lixo eletrônico, com logística adequada para o reaproveitamento e a reciclagem dos componentes. Por fim, empresas devem ser responsabilizadas pelo ciclo completo de seus produtos, promovendo a chamada logística reversa.
+            </p>
+            <p>data: 27/08/2025</p>
+        </div>
+    </div>
+
+    <div id="projeto6" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-projeto6">
+        <div class="modal-content">
+            <div class="flower-animation modal-flower" aria-hidden="true"></div>
+            <button class="close" aria-label="Fechar" onclick="closeModal('projeto6')">&times;</button>
+            <h2 id="titulo-projeto6">Nota: 760</h2>
+            <p>
+                O ritmo acelerado da vida moderna tem estimulado o consumo de alimentos ultraprocessados, risco em açúcares, gorduras e aditivos químicos. Apesar de sua praticidade, esse hábito alimentar traz sérias consequências à saúde da população, exigindo atenção e intervenção eficaz.
+Em primeiro lugar, é notável a relação entre o consumo frequente desses produtos e o crescimento de doenças como obesidade, diabetes e hipertensão. Segundo a Organização Mundial de Saúde, esses alimentos contribuem significativamente para o aumento de doenças crônicas, especialmente entre pessoas de baixa renda, que enfrentam mais dificuldades de acesso a alimentos naturais e nutritivos.
+Além disso, a publicidade voltada ao público infantil agrava o problema. Personagens animados, brindes e embalagens
+atrativas incentivam desde cedo o consumo desses produtos, prejudicando a formação de hábitos alimentares saudáveis.
+Dessa forma, é fundamental que o Ministério da Educação, em parceria com o Ministério da Saúde, desenvolva campanhas educativas nas escolas sobre alimentação saudável. Além disso o Estado deve criar regras mais rígidas para limitar a publicidade de ultraprocessados dirigido às crianças. Com essas medidas, será possível promover uma sociedade mais consciente e saudável.
+            </p>
+            <p>data: 02/09/2025</p>
+        </div>
+    </div>
+
+    <div id="projeto7" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-projeto7">
+        <div class="modal-content">
+            <div class="flower-animation modal-flower" aria-hidden="true"></div>
+            <button class="close" aria-label="Fechar" onclick="closeModal('projeto7')">&times;</button>
+            <h2 id="titulo-projeto7">Nota: 830</h2>
+            <p>
+                Com o avanço da tecnologia e a popularização da internet, os jogos de apostas online tornaram-se cada vez mais acessíveis. Embora representem uma forma de lazer para alguns, podem gerar dependência e trazer sérias consequências para a vida dos indivíduos e para a sociedade.
+Um dos fatores que favorecem essa dependência é a facilidade de acesso às plataformas, disponíveis a qualquer hora em
+dispositivos móveis. Além disso, a publicidade frequente, muitas vezes direcionada a jovens, estimula a prática ao transmitir a ilusão dos ganhos rápidos. A ausência de regulamentação eficaz também contribui para a expansão descontroladas dessas empresas.
+Os efeitos são diversos: dívidas financeiras, problemas psicológicos como ansiedade e depressão, além de prejuízos nas
+relações sociais e familiares. Tais impactos tornam-se uma questão de saúde pública, exigindo ações do poder público.
+Portanto, é essencial que o Governo Federal regularmente de forma mais rigorosa a publicidade e os limites das apostas,
+além de promover campanhas educativas em escolas e mídias digitais, com apoio de profissionais da saúde.
+            </p>
+            <p>data: 07/07/2025</p>
+        </div>
+    </div>
+
+    <div id="projeto8" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-projeto8">
+        <div class="modal-content">
+            <div class="flower-animation modal-flower" aria-hidden="true"></div>
+            <button class="close" aria-label="Fechar" onclick="closeModal('projeto8')">&times;</button>
+            <h2 id="titulo-projeto8">Nota: 880</h2>
+            <p>
+                O Brasil enfrenta profundas desigualdades sociais, visíveis na falta de acesso a direitos básicos, como saúde, educação e
+moradia. Nesse cenário, o trabalho voluntário desempenha um papel relevante, pois contribui para reduzir disparidades e fortalecer a solidariedade entre cidadãos.
+Em primeiro lugar, o voluntariado complementa as ações do Estado, muitas vezes insuficientes diante da grande demanda
+social. Projetos de apoio, como distribuição de alimentos e reforço escolar, proporcionam melhorias concretas na vida de grupos vulneráveis, promovendo inclusão e igualdade de oportunidades.
+Ademais, a prática voluntária estimula valores de empatia e cidadania. Ao se engajar em ações solidárias, o indivíduo
+amplia sua consciência social e colabora para uma sociedade mais justa e humanizada, combatendo a indiferença diante da desigualdade.
+Portanto, é necessário estimular essa prática. O Ministério da Educação, em parceria com ONGs, pode divulgar campanhas em escolas e universidades, incentivando jovens a participar de iniciativas solidárias. Assim o voluntariado será fortalecido como ferramenta de combate às desigualdades sociais.
+            </p>
+            <p>data: 15/09/2025</p>
+        </div>
+    </div>
+
+    <div id="projeto9" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-projeto9">
+        <div class="modal-content">
+            <div class="flower-animation modal-flower" aria-hidden="true"></div>
+            <button class="close" aria-label="Fechar" onclick="closeModal('projeto9')">&times;</button>
+            <h2 id="titulo-projeto9">Nota: 840</h2>
+            <p>
+                Hoje em dia, muitas crianças estão deixando de viver a infância por causa da adultização. Isso acontece quando elas começam a agir, vestir e pensar como adultos, influenciadas pela internet, pela mídia e até pela família. Essa situação traz muitos prejuízos para o desenvolvimento emocional e social.
+Ao perder tempo de brincar e aprender com leveza, as crianças podem se tornar ansiosas e inseguras. A cobrança por aparência e comportamento adulto faz com que cresçam sem aproveitar uma fase importante da vida. A infância é essencial para formar valores e preparar o indivíduo para o futuro, como diz no vídeo gravado pelo influenciador Felca, publicado na plataforma
+"Youtube". Nele é criticado a forma de exposição da criança nas redes, inclusive em como os responsáveis estão sujeitos a mostrar seus filhos em situações constrangedoras.
+Para mudar isso, é preciso que pais e escolas protejam esse período, limitando o uso das redes sociais e valorizando o
+brincar e a convivência. Assim, será possível garantir uma infância saudável e feliz.
+            </p>
+            <p>data: 26/09/2025</p>
+        </div>
+    </div>
+
+    <div id="projeto10" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-projeto10">
+        <div class="modal-content">
+            <div class="flower-animation modal-flower" aria-hidden="true"></div>
+            <button class="close" aria-label="Fechar" onclick="closeModal('projeto10')">&times;</button>
+            <h2 id="titulo-projeto10">Nota: 830</h2>
+            <p>
+                A obra Utopia do sociólogo Thomas More, mostra uma sociedade sem defeitos, no entanto, o estigma prejudica o conceito
+do estudioso, uma vez que prejudica os idosos com associações falsas e preconceituosas, fato que se dá tanto por mentiras midiáticas, tanto pela falta de penalidades severas.
+Logo, a mídia cumpre um papel essencial para com a disseminação de esteriótipos preconceituosos aos idosos no Brasil.
+Em novelas, normalmente, temos a imagem de pessoas mais velhas como cansadas, doentes e longe do protagonismo. Fato que contribui para o julgamento em massa.
+Ademais, a falta de leis também é um problema, trazendo consequências irreversíveis a saúde psicológica, emocional e
+física dos idosos, uma vez que os idosos se sentem desprotegidos. A legislação federal assume apenas leis contra abusos trabalhistas, e não contra o etarismo em si, o que tornam difíceis o julgamento contra indivíduos que o cometem.
+Por fim, deve ao Governo Federal assegurar leis de combate ao estigma, além de certificar que as punições sejam tomadas de forma eficaz. Também é necessária campanhas de conscientização nas escolas, para que a juventude reflita sobre a atitude da sociedade em relação as pessoas que tanto contribuem com conhecimento ao Brasil. Assim, teremos um país justo e desenvolvido.
+            </p>
+            <p>data: 26/09/2025</p>
+        </div>
+    </div>
+
+    <div id="projeto11" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-projeto11">
+        <div class="modal-content">
+            <div class="flower-animation modal-flower" aria-hidden="true"></div>
+            <button class="close" aria-label="Fechar" onclick="closeModal('projeto11')">&times;</button>
+            <h2 id="titulo-projeto11">Nota: 840</h2>
+            <p>
+                O livro "Pai Rico Pai Pobre", do autor Robert Kiyosaki, enfatiza a importância do aprendizado constante sobre como o dinheiro funciona e como lidar com ele de forma estratégica. Porém, o estigma confronta as ideias do livro, dado que cada vez mais o número de jovens endividados aumentam. Fato que se dá tanto pela falta de conscientização do governo, quanto pela escassez de influência midiática.
+Portanto, a Gestão Brasileira não se mostra atenta aos malefícios que a falta da educação financeira traz aos jovens. Isso
+é observado pela falta de políticas educacionais de conscientização e aprendizagem oferecidas aos alunos, visto que os mesmos não tem acesso a profissionais qualificados para ensinar de maneira devida a importância do controle de gastos e ganhos.
+Ademais, a mídia brasileira também contribui ao endividamento do jovem, pois exibe, em canais abertos, diversas
+propagandas de plataformas de apostas, as quais disseminam uma escolha errada e irreversível de investimento. Sendo necessárias ações para reverter esse cenário.
+Por fim, deve se ao Governo Federal a criação de leis e programas que incentivem escolhas corretas de administração
+financeira, trazendo palestrantes tanto para os estudantes, quanto para a comunidade. Além disso, deve estar atento a influência da mídia. Assim, teremos um país justo e desenvolvido.
+            </p>
+            <p>data: 10/10/2025</p>
+        </div>
+    </div>
+
+    <div id="projeto12" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-projeto12">
+        <div class="modal-content">
+            <div class="flower-animation modal-flower" aria-hidden="true"></div>
+            <button class="close" aria-label="Fechar" onclick="closeModal('projeto12')">&times;</button>
+            <h2 id="titulo-projeto12">Nota: 800</h2>
+            <p>
+                A cultura popular brasileira é uma das maiores riquezas do país, pois mostra a história e costumes do povo. Mesmo assim,
+muitas tradições, danças, músicas e festas ainda não recebem o valor que merecem. Isso acontece por causa da falta de reconhecimento e de apoio do governo e da sociedade.
+Um dos principais desafios é o preconceito cultural. Muitas pessoas acham que apenas a cultura estrangeira ou chamada
+"alta cultura" têm importância, deixando de lado manifestações como o frevo, o maracatu e o cordel. Além disso, a mídia raramente dá espaço para esses eventos, o que faz com que fiquem esquecidos.
+Outro problema é a falta de investimentos. Sem apoio financeiro, grupos e artistas populares não conseguem manter suas
+tradições vivas.
+Portanto é importante que o governo e as escolas promovam projetos e campanhas que valorizem a cultura popular, para
+que ela continue sendo parte viva da identidade do povo brasileiro.
+            </p>
+            <p>data: 17/10/2025</p>
+        </div>
+    </div>
+
+    <div id="projeto13" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-projeto13">
+        <div class="modal-content">
+            <div class="flower-animation modal-flower" aria-hidden="true"></div>
+            <button class="close" aria-label="Fechar" onclick="closeModal('projeto13')">&times;</button>
+            <h2 id="titulo-projeto13">Nota: 840</h2>
+            <p>
+                O artigo 6 da Constituição Federal garante aos indivíduos direitos básicos, além de assegurar o mínimo para que ele viva
+dignamente. Entretanto, o estigma vai contra as normas da constituição, uma vez que a universalização do saneamento básico ainda é um problema, fato que se dá tanto pela negligência governamental e da sociedade.
+Primeiramente, é válido citar o gerenciamento brasileiro como principal culpado do excerto. Os Objetivos de Desenvolvimento Sustentável (ODS), cita diversas metas, entre elas, o acoplamento do saneamento básico. Apesar disso, esses objetivos são apenas ilusão e estão longe de se tornar realidade. Sendo necessário ações para reverter esse cenário.
+Ademais, a alienação da população brasileira também contribui para a dificuldade da conquista da universalização dos
+recursos básicos de dignidade do ser humano. A falta de denúncia ao esgoto em céu aberto, jogar lixo em locais inapropriados e ignorar sinais extremos de precariedade causam o inacesso de milhares de pessoas viverem em um ambiente melhor e digno.
+Por fim, vale ao Governo Federal a partir do órgão responsável pelo Meio Ambiente criar ações efetivas para cumprir o que dizem as ODS, além de criar campanhas para a população, espalhando sinais de denunciação. Assim, cumpriremos o que diz o
+Artigo 6 da constituição federal.
+            </p>
+            <p>data: 24/10/2025</p>
+        </div>
+    </div>
+
+    <div id="projeto14" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-projeto14">
+        <div class="modal-content">
+            <div class="flower-animation modal-flower" aria-hidden="true"></div>
+            <button class="close" aria-label="Fechar" onclick="closeModal('projeto14')">&times;</button>
+            <h2 id="titulo-projeto14">Nota: 720</h2>
+            <p>
+                O jogador brasileiro mundialmente conhecido como Neymar Jr,
+nasceu no Rio de Janeiro, e, quando criança, sofria com os impactos da desigualdade social, porem, o futebol transformou a realidade em que vivia. Nesse sentido, é válido citar os esportes como grande possibilidade de mudança social na vida de milhares de adolescentes e jovens, e, a falta de acesso a essas práticas podem trazer consequências á saúde física e mental dos mesmos, fato que se dá tanto pela carência de inclusão social.
+É primordial destacar a escassez da inclusão social como principal ferramenta do excerto. Milhares de jovens que vivem
+em situações miseráveis, não tem acesso a práticas esportivas, seja porque trabalham e estudam desde cedo, ou pelo fato de simplesmente não terem, em suas rotinas, o desporto ou recreação. Sendo necessárias ações para reverter esse cenário.
+Portanto, deve ao gerenciamento brasileiro, a partir do órgão responsável pelos esportes, fornecer campanhas através de
+palestras escolares a modo de promover á prática dos esportes a todos os adolescentes, resultando em melhoras na saúde física e mental dos jovens. Assim, transformaremos a realidade de milhares de famílias, como aconteceu com o jogador Neymar.
+                </p>
+            <p>data: 31/10/2025</p>
+        </div>
+    </div>
+
+    <!-- AGRADECIMENTOS + MINI CALENDÁRIO -->
+    <section class="thanks-calendar" aria-labelledby="agradecimentos-title">
+        <div class="thanks">
+            <h2 id="agradecimentos-title">Agradecimentos</h2>
+            <p>A vida não seria a mesma sem aqueles que estão ao meu lado, e em meio ao caos, Deus colocou pessoas certas. Sou grata por cada uma delas. "Agradeço, Senhor, por mais um dia." (Mús. A Vida É Desafio)</p>
+        </div>
+
+        <div class="mini-calendar" aria-label="Calendário de Dezembro">
+            <h3>Dezembro</h3>
+            <div id="calendar-grid" class="calendar-grid" aria-hidden="false"></div>
+            <div class="legend">
+                <span class="legend-item event-end">19/12 — Fim das aulas</span>
+                <span class="legend-item event-natal">25/12 — Natal</span>
+                <span class="legend-item event-ny">01/01 — Ano Novo</span>
+                <span class="legend-item event-ny">14/10 — Aniversário</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>Depois do medo, vem a vida. </p>
+            <p>Por: Gabriella Vitoria Henning. </p>
+            <div class="social-links">
+            </div>
+        </div>
+
+        <div class="footer-flowers" aria-hidden="true">
+            <div class="flower-footer flower1"></div>
+            <div class="flower-footer flower2"></div>
+            <div class="flower-footer flower3"></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
